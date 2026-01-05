@@ -1,0 +1,49 @@
+body {
+    background-color: #f5f7fa;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.feedback-card {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Rating layout */
+.rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Stars aligned left */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 28px;
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffc107;
+}
+
+/* Rating text */
+.rating-text {
+    font-size: 14px;
+    color: #555;
+}
